@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace c0730065_week_3
 {
-    class Program
+    class program
     {
         static void Main(string[] args)
+        { }
+     class village
         {
-
+            village previousvillage;
+            village nextvillage;
+        
         }
     }
 }
