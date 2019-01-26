@@ -14,6 +14,9 @@ namespace c0730065_week_3
     }
     class Node
     {
+        class countryside
+    }
+    {
         Node PreviousNode;
         Node NextNode;
     }
