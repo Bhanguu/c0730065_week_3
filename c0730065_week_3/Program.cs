@@ -10,11 +10,12 @@ namespace c0730065_week_3
     {
         static void Main(string[] args)
         { }
-     class village
-        {
-            village previousvillage;
-            village nextvillage;
-        
-        }
+
+    }
+    class Node
+    {
+        Node PreviousNode;
+        Node NextNode;
     }
 }
+
