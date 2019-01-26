@@ -15,19 +15,46 @@ namespace c0730065_week_3
         class countryside
 
         {
+            village Alst;
+            village Mealand;
+            village Schening;
+            public void IntializationMap()
+            {
 
-        }
-        class village
-        {
+                Alst = new village();
+                Mealand = new village();
+                Mealand.isAstrildeHere = true;
+                Schening = new village();
 
-            village Previousvillage;
-            village nextvillage;
-            String villageName;
-            bool isAstrildeHere = false;
-            bool isSchmingHere = false;
-            
+                Alst.Nextvillage = Mealand;
+                Mealand.Nextvillage = Schening;
+                Schening.Nextvillage = Alst;
 
-            public village() { }
+
+            }
+            public void WalkAround()
+            {
+                village InitialVillage = this.Mealand;
+            }
+
+
+            class village
+
+            {
+
+                public void IntializationMap() { }
+
+                public village Previousvillage;
+                public village Nextvillage;
+                public String villageName;
+                public bool isAstrildeHere = false;
+                public bool isSchmingHere = false;
+
+                public village() { }
+             
+
+
+            }
         }
     }
 }
