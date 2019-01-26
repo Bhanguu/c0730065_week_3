@@ -11,14 +11,22 @@ namespace c0730065_week_3
         static void Main(string[] args)
         { }
 
-    }
-    class Node
-    {
+
         class countryside
-    }
-    {
-        Node PreviousNode;
-        Node NextNode;
+
+        {
+
+        }
+        class village
+        {
+
+            village Previousvillage;
+            village nextvillage;
+            String villageName;
+            bool isAstrildHere = false;
+            public village() { }
+        }
     }
 }
+
 
