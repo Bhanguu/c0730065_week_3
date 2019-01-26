@@ -23,7 +23,10 @@ namespace c0730065_week_3
             village Previousvillage;
             village nextvillage;
             String villageName;
-            bool isAstrildHere = false;
+            bool isAstrildeHere = false;
+            bool isSchmingHere = false;
+            
+
             public village() { }
         }
     }
