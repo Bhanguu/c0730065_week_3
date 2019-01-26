@@ -35,13 +35,13 @@ namespace c0730065_week_3
 
 
             }
-            public void WalkAround()
+            public void FindAstrilde()
             {
-                {
+                
                     village CurrentVillage = this.Mealand;
                     if (CurrentVillage.isAstrildeHere)
                     {
-                        Console.WriteLine("Hugi found Astrilde !!! Celebrations! XOXO");
+                        Console.WriteLine("Hugi found Astrilde !!! Celebrations");
 
                     }
                     village NextVillage;
@@ -49,13 +49,13 @@ namespace c0730065_week_3
                     NextVillage = CurrentVillage.Nextvillage;
 
                 }
-            }
+            
 
             class village
 
             {
 
-                public void IntializationMap() { }
+                
 
                 public village Previousvillage;
                 public village Nextvillage;
