@@ -22,9 +22,12 @@ namespace c0730065_week_3
             {
 
                 Alst = new village();
+                Alst.villageName = "Alst";
                 Mealand = new village();
+                Mealand.villageName = "Mealand";
                 Mealand.isAstrildeHere = true;
                 Schening = new village();
+                Schening.villageName = "Schening";
 
                 Alst.Nextvillage = Mealand;
                 Mealand.Nextvillage = Schening;
@@ -34,9 +37,19 @@ namespace c0730065_week_3
             }
             public void WalkAround()
             {
-                village InitialVillage = this.Mealand;
-            }
+                {
+                    village CurrentVillage = this.Mealand;
+                    if (CurrentVillage.isAstrildeHere)
+                    {
+                        Console.WriteLine("Hugi found Astrilde !!! Celebrations! XOXO");
 
+                    }
+                    village NextVillage;
+
+                    NextVillage = CurrentVillage.Nextvillage;
+
+                }
+            }
 
             class village
 
@@ -48,7 +61,7 @@ namespace c0730065_week_3
                 public village Nextvillage;
                 public String villageName;
                 public bool isAstrildeHere = false;
-                public bool isSchmingHere = false;
+               
 
                 public village() { }
              
